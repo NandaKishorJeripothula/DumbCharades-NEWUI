@@ -11,8 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:weightSum="1">
 
+        <LinearLayout
+            android:id="@+id/team1LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:id="@+id/team1NameTextView"
@@ -25,21 +31,21 @@
             android:text="Team 1 name"
             android:textStyle="italic" />
 
-        <LinearLayout
-            android:id="@+id/team1LinearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+
 
             <ImageButton
                 android:id="@+id/deleteForTeam1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="38dp"
+                android:layout_height="36dp"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/add"
                 android:onClick="onAddForTeam1Clicked" />
-
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/team2LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:id="@+id/team2NameTextView"
@@ -53,20 +59,14 @@
             android:textStyle="italic" />
 
 
-        <LinearLayout
-            android:id="@+id/team2LinearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/deleteForTeam2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/add"
-                android:onClick="onAddForTeam2Clicked" />
-            <!--<Button-->
+        <ImageButton
+            android:id="@+id/deleteForTeam2"
+            android:layout_width="38dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add"
+            android:onClick="onAddForTeam2Clicked" />
+        <!--<Button-->
             <!--android:id="@+id/addForTeam2"-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->
@@ -82,16 +82,22 @@
             <!--android:textStyle="italic" />-->
 
         </LinearLayout>
-
-        <Button
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content" />
+    <Button
             android:id="@+id/startGameButton"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="289dp"
+            android:layout_height="100dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/colors"
+            android:background="@drawable/expst"
             android:fontFamily="serif"
-            android:text="Start"
             android:textStyle="italic" />
+</LinearLayout>
+
 
 
     </LinearLayout>

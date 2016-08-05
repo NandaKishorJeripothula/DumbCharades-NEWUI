@@ -33,7 +33,7 @@ public class HomeScreenActivity extends Activity {
     @TargetApi(16)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
+        setContentView(R.layout.activity_new_screen);//change activity to _1||_2||_3
 
         GameService gameService = GameServiceImpl.getInstance(true);
         gameService.createNewGame();
